@@ -1,0 +1,9 @@
+C:\Users\Rob.Lynam\documents\visual studio 2015\Projects\FolderMAKER3000\FolderMAKER3000\bin\Release\FolderMAKER3000.exe.config
+C:\Users\Rob.Lynam\documents\visual studio 2015\Projects\FolderMAKER3000\FolderMAKER3000\bin\Release\FolderMAKER3000.exe
+C:\Users\Rob.Lynam\documents\visual studio 2015\Projects\FolderMAKER3000\FolderMAKER3000\bin\Release\FolderMAKER3000.pdb
+C:\Users\Rob.Lynam\documents\visual studio 2015\Projects\FolderMAKER3000\FolderMAKER3000\obj\Release\FolderMAKER3000.Form1.resources
+C:\Users\Rob.Lynam\documents\visual studio 2015\Projects\FolderMAKER3000\FolderMAKER3000\obj\Release\FolderMAKER3000.Properties.Resources.resources
+C:\Users\Rob.Lynam\documents\visual studio 2015\Projects\FolderMAKER3000\FolderMAKER3000\obj\Release\FolderMAKER3000.csproj.GenerateResource.Cache
+C:\Users\Rob.Lynam\documents\visual studio 2015\Projects\FolderMAKER3000\FolderMAKER3000\obj\Release\FolderMAKER3000.exe
+C:\Users\Rob.Lynam\documents\visual studio 2015\Projects\FolderMAKER3000\FolderMAKER3000\obj\Release\FolderMAKER3000.pdb
+C:\Users\Rob.Lynam\documents\visual studio 2015\Projects\FolderMAKER3000\FolderMAKER3000\obj\Release\FolderMAKER3000.csprojResolveAssemblyReference.cache
