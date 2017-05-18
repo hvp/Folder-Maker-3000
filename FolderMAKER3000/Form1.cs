@@ -12,6 +12,28 @@ using System.Windows.Forms;
 
 namespace FolderMAKER3000
 {
+    public static class Helpers
+    {
+        public static string ToSafeFileName(this string s)
+        {
+            return s
+                .Replace("\\", "")
+                .Replace("/", "")
+                .Replace("\"", "")
+                .Replace("*", "")
+                .Replace(":", "")
+                .Replace("?", "")
+                .Replace("<", "")
+                .Replace(">", "")
+                .Replace("–", "")
+                .Replace("|", "");
+        }
+
+
+    }
+
+
+
     public partial class Form1 : Form
     {
         public List<string> names = new List<string>();
@@ -64,6 +86,7 @@ namespace FolderMAKER3000
                 bool legacyflag = true;
                 foreach (string s in names)
                 {
+                    string folderName = Helpers.ToSafeFileName(s);
 
                     if (legacyflag && s.Equals("Proprietary and Confidential"))
                     {
@@ -76,13 +99,13 @@ namespace FolderMAKER3000
                     {
                         if (index < 10)
                         {
-                            Directory.CreateDirectory(_path + @"\0" + index + " " + s);
-                            File.WriteAllText(_path + @"\0" + index + " " + s + "\\keep.txt", "");
+                            Directory.CreateDirectory(_path + @"\0" + index + " " + folderName);
+                            File.WriteAllText(_path + @"\0" + index + " " + folderName + "\\keep.txt", "");
                         }
                         else
                         {
-                            Directory.CreateDirectory(_path + @"\" + index + " " + s);
-                            File.WriteAllText(_path + @"\" + index + " " + s + "\\keep.txt", "");
+                            Directory.CreateDirectory(_path + @"\" + index + " " + folderName);
+                            File.WriteAllText(_path + @"\" + index + " " + folderName + "\\keep.txt", "");
                         }
                         index++;
                     }
@@ -97,6 +120,8 @@ namespace FolderMAKER3000
                 MessageBox.Show("Please set the path!");
             }
         }
+
+     
 
         private void button3_Click(object sender, EventArgs e)
         {
